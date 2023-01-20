@@ -20,5 +20,10 @@
         &::-webkit-input-placeholder {
             color: var(--gray);
         }
+
+        &::-webkit-search-decoration:hover,
+        &::-webkit-search-cancel-button:hover { 
+            cursor:pointer; 
+        }
     }
 }
