@@ -1,0 +1,32 @@
+.button {
+    cursor: pointer;
+    
+    background-color: transparent;
+
+    width: fit-content;
+
+    white-space: nowrap;
+    font-weight: 700;
+
+    border: 0;
+    border-radius: 12px;
+    padding: 18px 26px;
+}
+
+.button.confirm {
+    background-color: var(--green);
+    color: white;
+
+    &:hover {
+        background-color: var(--light-green);
+    }
+}
+
+.button.delete {
+    background-color: var(--red);
+    color: white;
+
+    &:hover {
+        background-color: var(--light-red);
+    }
+}

@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 function UseLoading() {
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
-    return [loading, loadingTrue, loadingFalse]
+    return { loading, loadingTrue, loadingFalse }
 
     function loadingTrue() { setLoading(true) }
+    
     function loadingFalse() { setLoading(false) }
 }
 

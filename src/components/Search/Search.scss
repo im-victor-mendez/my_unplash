@@ -1,0 +1,24 @@
+.search {
+    color: var(--gray);
+
+    display: flex;
+    gap: 16.24px;
+
+    border: 1px solid var(--gray);
+    border-radius: 12px;
+    padding: 16.5px 16.12px;
+
+    i {
+        cursor: pointer;
+    }
+
+    input {
+        outline: 0;
+        border: 0;
+        padding: 0;
+
+        &::-webkit-input-placeholder {
+            color: var(--gray);
+        }
+    }
+}
