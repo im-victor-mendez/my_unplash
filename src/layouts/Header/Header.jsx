@@ -6,6 +6,11 @@ import Button from '../../components/Button/Button'
 import Search from '../../components/Search/Search'
 
 function Header() {
+  function addImage() {
+    const message = document.getElementById('add_image-message')
+    message.classList.toggle('active')
+  }
+
   return (
     <header id='header'>
         <section className='header-left'>
@@ -13,7 +18,7 @@ function Header() {
             <Search id='header-search_name'></Search>
         </section>
 
-        <Button type='confirm'>Add a photo</Button>
+        <Button className='confirm' onClick={addImage}>Add a photo</Button>
     </header>
   )
 }

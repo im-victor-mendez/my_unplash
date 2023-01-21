@@ -1,0 +1,26 @@
+.add_image {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  text-align: start;
+
+  * {
+    margin: 0;
+  }
+
+  input {
+    width: -webkit-fill-available;
+
+    border: 1px solid var(--dark-gray);
+    border-radius: 12px;
+    padding: 18px;
+  }
+}
+
+.add_image-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 10px;
+}

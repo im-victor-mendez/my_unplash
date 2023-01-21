@@ -1,10 +1,17 @@
-import './Button.scss'
-import React from 'react'
+import "./Button.scss";
+import React from "react";
 
-function Button({ id, type, onClick, children }) {
+function Button({ id, className, type, onClick, children }) {
   return (
-    <button className={`button ${type}`} id={id} onClick={onClick}>{children}</button>
-  )
+    <button
+      className={`button ${className}`}
+      id={id}
+      type={type}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 }
 
-export default Button
+export default Button;

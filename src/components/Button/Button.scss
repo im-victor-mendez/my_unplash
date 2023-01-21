@@ -1,32 +1,39 @@
 .button {
-    cursor: pointer;
-    
-    background-color: transparent;
+  cursor: pointer;
 
-    width: fit-content;
+  background-color: transparent;
 
-    white-space: nowrap;
-    font-weight: 700;
+  width: fit-content;
 
-    border: 0;
-    border-radius: 12px;
-    padding: 18px 26px;
+  white-space: nowrap;
+  font-weight: 700;
+
+  border: 0;
+  border-radius: 12px;
+  padding: 18px 26px;
 }
 
 .button.confirm {
-    background-color: var(--green);
-    color: white;
+  background-color: var(--green);
+  color: white;
 
-    &:hover {
-        background-color: var(--light-green);
-    }
+  &:hover {
+    background-color: var(--light-green);
+  }
 }
 
 .button.delete {
-    background-color: var(--red);
-    color: white;
+  background-color: var(--red);
+  color: white;
 
-    &:hover {
-        background-color: var(--light-red);
-    }
+  &:hover {
+    background-color: var(--light-red);
+  }
+}
+
+.button.cancel {
+  &:hover {
+    background-color: var(--light-red);
+    color: white;
+  }
 }
