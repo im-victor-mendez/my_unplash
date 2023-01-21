@@ -6,17 +6,22 @@ import Images from "../../layouts/Images/Images";
 import { SearchProvider } from "../../contexts/searchContext";
 import Message from "../../layouts/Message/Message";
 import Add_Image from "../../components/Add_Image/Add_Image";
+import Delete_Image from "../../components/Delete_Image/Delete_Image";
+import ImageProvider from "../../contexts/imageContext";
 
 function Home() {
   return (
     <section id="home">
-      <SearchProvider>
-        <Header />
-        <Images />
-      </SearchProvider>
-      <Message id="add_image-message">
-        <Add_Image />
-      </Message>
+      <ImageProvider>
+        <SearchProvider>
+          <Header />
+          <Images />
+        </SearchProvider>
+
+        <Message id='delete_image-message'><Delete_Image /></Message>
+      </ImageProvider>
+      
+      <Message id="add_image-message"><Add_Image /></Message>
     </section>
   );
 }

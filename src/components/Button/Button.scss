@@ -32,8 +32,19 @@
 }
 
 .button.cancel {
+  color: var(--gray);
+
   &:hover {
     background-color: var(--light-red);
+    color: white;
+  }
+}
+
+.button.good_cancel {
+  color: var(--gray);
+  
+  &:hover {
+    background-color: var(--light-green);
     color: white;
   }
 }
