@@ -22,3 +22,8 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 export const auth = getAuth(app)
 /* Providers */
 export const googleProvider = new GoogleAuthProvider()
+
+// Database
+import { getDatabase } from "firebase/database";
+
+export const db = getDatabase(app)
