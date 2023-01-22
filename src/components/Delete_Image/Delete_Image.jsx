@@ -32,7 +32,7 @@ function Delete_Image() {
     return (
     <form className='delete_image'>
         <h1>Are you sure?</h1>
-        {!user.emailVerified && <label>
+        {user.emailVerified && <label>
             Password
             <input
                 type="password"

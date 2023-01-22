@@ -20,8 +20,9 @@ function Images() {
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
     >
-      {images.length === 0 ? (
-        <Loading />
+      {
+        !images ? <Loading /> : images.length === 0 ? (
+        <>No images founded or</>
       ) : (
         images
           .filter((image) => {

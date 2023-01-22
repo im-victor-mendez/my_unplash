@@ -4,7 +4,7 @@ import { useAuth } from "../contexts/authContext";
 import { db } from "./firebase";
 
 function UseImages() {
-    const [images, setImages] = useState([])
+    const [images, setImages] = useState(null)
     const { user } = useAuth()
 
     useEffect(() => {

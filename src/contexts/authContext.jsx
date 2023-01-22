@@ -1,5 +1,6 @@
-import { GoogleAuthProvider, onAuthStateChanged, signInWithRedirect, signOut } from "firebase/auth";
+import { GoogleAuthProvider, onAuthStateChanged, signInAnonymously, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 import { auth, googleProvider } from "../firebase/firebase";
 import UseLoading from "../hooks/useLoading";
 
@@ -14,6 +15,7 @@ export function AuthProvider({ children }) {
     const [user, setUser] = useState(null)
 
     const { loading, loadingFalse, loadingTrue } = UseLoading()
+    const navigate = useNavigate()
 
     useEffect(() => {
       const unsubscribe = onAuthStateChanged(auth, user => {
@@ -24,15 +26,34 @@ export function AuthProvider({ children }) {
       return () => unsubscribe()
     }, [user])
 
-    return <authContext.Provider value={{ loading, user, loginWithGoogle, logout }}>{children}</authContext.Provider>
+    return <authContext.Provider
+        value={{
+            loading,
+            user,
+            loginWithGoogle,
+            loginAnonymously,
+            logout
+        }}>
+            {children}
+    </authContext.Provider>
 
     async function loginWithGoogle() {
-        await signInWithRedirect(auth, googleProvider)
+        await signInWithPopup(auth, googleProvider)
         .then(result => {
             const credential = GoogleAuthProvider.credentialFromResult(result)
             const token = credential.accessToken
             const user = result.user
         })
+        .finally(() => navigate('/home'))
+    }
+
+    async function loginAnonymously() {
+        await signInAnonymously(auth)
+        .then(result => {
+            const credential = GoogleAuthProvider.credentialFromResult(result)
+            const user = result.user
+        })
+        .finally(() => navigate('/home'))
     }
 
     function logout() {

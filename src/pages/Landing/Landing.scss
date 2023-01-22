@@ -1,0 +1,24 @@
+.login-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+        cursor: pointer;
+
+        background-color: var(--degraded-white);
+        color: var(--gray);
+
+        border: 1px solid var(--gray);
+        border-radius: 12px;
+        padding: 16.13px 25.26px;
+
+        &:hover {
+            background-color: cadetblue;
+            color: whitesmoke;
+
+            border: 1px solid var(cadetblue);
+        }
+    }
+}
