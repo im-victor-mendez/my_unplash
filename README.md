@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://zippy-profiterole-eb6ac9.netlify.app/">
+    <a href="https://im-victor-mendez-my-unplash.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/im-victor-mendez/React-My_Unplash">
+    <a href="https://github.com/im-victor-mendez/my_unplash">
       Solution
     </a>
     <span> | </span>
@@ -20,8 +20,6 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -30,15 +28,13 @@
 - [How to use](#how-to-use)
 - [Contact](#contact)
 
-<!-- OVERVIEW -->
-
 ## Overview
 
 ### Screenshot
 ![Overview Screenshot](./Overview/Overview.png)
 
-### Video
-![Overview Video](./Overview/Overview.mp4)
+<!-- ### Video
+![Overview Video](./Overview/Overview.mp4) -->
 
 ### Built With
 
@@ -61,19 +57,28 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## How To Use
 
-<!-- Example: -->
+### Use
+
+Only visit [demo url](https://im-victor-mendez-my-unplash.netlify.app/).
+
+### Modify code
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+git clone https://github.com/im-victor-mendez/my_unplash.git
+
+# In terminal locate inside the location where the repository was cloned
 
 # Install dependencies
-$ npm install
+npm install
 
-# Run the app
-$ npm start
+# Build app
+npm run build
+
+# Run app
+npm run preview
 ```
 
 ## Contact
