@@ -31,10 +31,8 @@
 ## Overview
 
 ### Screenshot
-![Overview Screenshot](./Overview/Overview.png)
 
-<!-- ### Video
-![Overview Video](./Overview/Overview.mp4) -->
+![Overview Screenshot](./Overview/Overview.png)
 
 ### Built With
 
@@ -46,6 +44,7 @@
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
 
 ### Users can:
+
 - See a list of photos in the masonry layout that have added.
 - Add a new photo to the list.
 - Search for photos by label.
@@ -53,6 +52,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - Delete images.
 
 ### To implement:
+
 - Enter account password to delete image.
 
 ## How To Use
@@ -60,26 +60,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ### Use
 
 Only visit [demo url](https://im-victor-mendez-my-unplash.netlify.app/).
-
-### Modify code
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/im-victor-mendez/my_unplash.git
-
-# In terminal locate inside the location where the repository was cloned
-
-# Install dependencies
-npm install
-
-# Build app
-npm run build
-
-# Run app
-npm run preview
-```
 
 ## Contact
 
