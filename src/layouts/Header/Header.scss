@@ -1,10 +1,14 @@
-#header {
-    display: flex;
-    justify-content: space-between;
+@import '../../styles/layouts/Header/Header.desktop';
+@import '../../styles/layouts/Header/Header.mobile';
+@import '../../styles/layouts/Header/Header.tablet';
 
-    width: -webkit-fill-available;
+#header {
+	display: flex;
+	justify-content: space-between;
+
+	width: -webkit-fill-available;
 }
 
 .header-left {
-    display: flex;
+	display: flex;
 }
