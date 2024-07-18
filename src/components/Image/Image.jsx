@@ -13,24 +13,7 @@ import { useImage } from '../../contexts/imageContext';
  * @returns JSX.Element
  */
 function Image({ uid, url, label }) {
-	const [image, setImage] = useState({ width: undefined, height: undefined });
-
 	const { changeImageUid } = useImage();
-
-	/**
-	 * **On Load**
-	 *
-	 * Gets natural image size and sets into image state.
-	 * @param event
-	 */
-	function onLoad(event) {
-		const target = event.target;
-
-		const width = target.naturalWidth;
-		const height = target.naturalHeight;
-
-		setImage({ width, height });
-	}
 
 	/**
 	 * **On Delete**
@@ -45,16 +28,8 @@ function Image({ uid, url, label }) {
 	}
 
 	return (
-		<div
-			className='image'
-			style={{
-				backgroundImage: `url(${url})`,
-				backgroundSize: `100% ${image.height}px`,
-				width: `${image.width}px`,
-				height: `${image.height}px`,
-			}}
-		>
-			<img onLoad={onLoad} src={url} alt={`Image ${uid}`} />
+		<div className='image'>
+			<img src={url} alt={`Image with label: ${label}`} />
 
 			<div className='image-content'>
 				<button onClick={onDelete}>Delete</button>
