@@ -1,3 +1,7 @@
+@import '../../styles/pages/Landing/Landing.desktop';
+@import '../../styles/pages/Landing/Landing.mobile';
+@import '../../styles/pages/Landing/Landing.tablet';
+
 #landing {
 	padding: 30px;
 
@@ -43,5 +47,11 @@
 		ul {
 			text-align: start;
 		}
+	}
+}
+
+#landing {
+	#solution-overview {
+		width: 80%;
 	}
 }

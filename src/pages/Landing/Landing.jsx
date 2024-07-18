@@ -25,12 +25,16 @@ function Landing() {
 
 			<center>
 				<p>To use this app you need to authenticate by one of these methods.</p>
-				<img src={SolutionOverview} alt='Solution Overview' />
+				<img
+					id='solution-overview'
+					src={SolutionOverview}
+					alt='Solution Overview'
+				/>
 
 				<h2>Auth Differences</h2>
 				<div id='auth-differences'>
 					<div>
-						<h3>Google</h3>
+						<h3>✅ Google</h3>
 						<ul>
 							<li>
 								Your photos will be saved in Firebase database linked to your
@@ -39,7 +43,7 @@ function Landing() {
 						</ul>
 					</div>
 					<div>
-						<h3>Anonymously</h3>
+						<h3>⭕ Anonymously</h3>
 						<ul>
 							<li>Your photos will not be saved.</li>
 						</ul>
