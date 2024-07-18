@@ -1,24 +1,47 @@
+#landing {
+	padding: 30px;
+
+	main {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
 .login-methods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
 
-    button {
-        cursor: pointer;
+	button {
+		cursor: pointer;
 
-        background-color: var(--degraded-white);
-        color: var(--gray);
+		background-color: var(--degraded-white);
+		color: var(--gray);
 
-        border: 1px solid var(--gray);
-        border-radius: 12px;
-        padding: 16.13px 25.26px;
+		border: 1px solid var(--gray);
+		border-radius: 12px;
+		padding: 16.13px 25.26px;
 
-        &:hover {
-            background-color: cadetblue;
-            color: whitesmoke;
+		&:hover {
+			background-color: cadetblue;
+			color: whitesmoke;
 
-            border: 1px solid var(cadetblue);
-        }
-    }
+			border: 1px solid var(cadetblue);
+		}
+	}
+}
+
+#auth-differences {
+	display: flex;
+	justify-content: space-between;
+
+	div {
+		width: 50%;
+		text-align: center;
+
+		ul {
+			text-align: start;
+		}
+	}
 }
