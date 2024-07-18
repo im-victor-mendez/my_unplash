@@ -1,8 +1,12 @@
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 75.76px;
+@import '../../styles/pages/Home/Home.desktop';
+@import '../../styles/pages/Home/Home.mobile';
+@import '../../styles/pages/Home/Home.tablet';
 
-    max-height: calc(100vh - 64px);
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 75.76px;
+
+	height: -webkit-fill-available;
 }
