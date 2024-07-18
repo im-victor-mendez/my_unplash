@@ -24,13 +24,6 @@ function Landing() {
 			</main>
 
 			<center>
-				<p>To use this app you need to authenticate by one of these methods.</p>
-				<img
-					id='solution-overview'
-					src={SolutionOverview}
-					alt='Solution Overview'
-				/>
-
 				<h2>Auth Differences</h2>
 				<div id='auth-differences'>
 					<div>
@@ -49,6 +42,13 @@ function Landing() {
 						</ul>
 					</div>
 				</div>
+
+				<p>To use this app you need to authenticate by one of these methods.</p>
+				<img
+					id='solution-overview'
+					src={SolutionOverview}
+					alt='Solution Overview'
+				/>
 			</center>
 		</section>
 	);

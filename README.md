@@ -45,15 +45,11 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ### Users can:
 
-- See a list of photos in the masonry layout that have added.
-- Add a new photo to the list.
-- Search for photos by label.
-- When hover a photo, see a label and a delete button.
-- Delete images.
-
-### To implement:
-
-- Enter account password to delete image.
+- [x] See a list of photos in the masonry layout that have added.
+- [x] Add a new photo to the list.
+- [x] Search for photos by label.
+- [x] When hover a photo, see a label and a delete button.
+- [x] Delete images.
 
 ## How To Use
 
