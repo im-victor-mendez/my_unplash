@@ -4,7 +4,7 @@ import React from 'react';
 import { useAuth } from '../../contexts/authContext';
 import { useImage } from '../../contexts/imageContext';
 import deleteImage from '../../firebase/deleteImage';
-import Button from '../Button/Button';
+import { Button } from '../Button/Button';
 
 /**
  * **Delete Image Component**
@@ -12,7 +12,7 @@ import Button from '../Button/Button';
  * Component to delete image from account.
  * @returns JSX.Element
  */
-function DeleteImageComponent() {
+function DeleteImage() {
 	const { user } = useAuth();
 	const { imageUid } = useImage();
 
@@ -60,4 +60,4 @@ function DeleteImageComponent() {
 	);
 }
 
-export default DeleteImageComponent;
+export { DeleteImage };
