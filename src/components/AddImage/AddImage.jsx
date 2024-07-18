@@ -1,4 +1,4 @@
-import './Add_Image.scss';
+import './AddImage.scss';
 
 import React, { useState } from 'react';
 import { useAuth } from '../../contexts/authContext';
@@ -6,18 +6,44 @@ import submitImage from '../../firebase/submitImage';
 import { Button } from '../Button/Button';
 import UseLoading from '../../hooks/useLoading';
 
-function Add_Image() {
+/**
+ * **Add Image**
+ *
+ * Component that displays form to add new image with url.
+ * @returns JSX.Element
+ */
+function AddImage() {
 	const [image, setImage] = useState({ label: '', url: '' });
+
+	/**
+	 * **Reset Image**
+	 *
+	 * Reset image state data to initial values.
+	 * @returns void
+	 */
 	const resetImage = () => setImage({ label: '', url: '' });
 
 	const { user } = useAuth();
 	const { loadingTrue, loadingFalse } = UseLoading();
 
+	/**
+	 * **On Change**
+	 *
+	 * Handles image data.
+	 * @param event
+	 */
 	function onChange(event) {
 		const target = event.target;
+
 		setImage({ ...image, [target.name]: target.value });
 	}
 
+	/**
+	 * **On Cancel**
+	 *
+	 * Prevents default button action and resets image data.
+	 * @param event React.MouseEvent<HTMLButtonElement>
+	 */
 	function onCancel(event) {
 		event.preventDefault();
 
@@ -27,6 +53,12 @@ function Add_Image() {
 		message.classList.toggle('active');
 	}
 
+	/**
+	 * **On Submit**
+	 *
+	 * Prevents default button action, submits image and reset image state values.
+	 * @param event React.MouseEvent<HTMLButtonElement>
+	 */
 	async function onSubmit(event) {
 		event.preventDefault();
 
@@ -65,7 +97,7 @@ function Add_Image() {
 				/>
 			</label>
 
-			<div className='add_image-buttons'>
+			<div className='buttons'>
 				<Button className='confirm' type='submit'>
 					Submit
 				</Button>
@@ -77,4 +109,4 @@ function Add_Image() {
 	);
 }
 
-export { Add_Image };
+export { AddImage };

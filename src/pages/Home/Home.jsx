@@ -5,7 +5,7 @@ import Header from '../../layouts/Header/Header';
 import Images from '../../layouts/Images/Images';
 import { SearchProvider } from '../../contexts/searchContext';
 import Message from '../../layouts/Message/Message';
-import { Add_Image, DeleteImage } from '../../components/components';
+import { AddImage, DeleteImage } from '../../components/components';
 import ImageProvider from '../../contexts/imageContext';
 
 function Home() {
@@ -23,7 +23,7 @@ function Home() {
 			</ImageProvider>
 
 			<Message id='add_image-message'>
-				<Add_Image />
+				<AddImage />
 			</Message>
 		</section>
 	);

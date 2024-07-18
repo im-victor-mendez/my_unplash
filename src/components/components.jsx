@@ -1,4 +1,4 @@
-export { Add_Image } from './Add_Image/Add_Image';
+export { AddImage } from './AddImage/AddImage';
 export { Button } from './Button/Button';
 export { DeleteImage } from './DeleteImage/DeleteImage';
 export { Image } from './Image/Image';
